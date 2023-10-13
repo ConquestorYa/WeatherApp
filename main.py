@@ -117,7 +117,7 @@ class Ui_MainWindow(object):
 
     def getWeatherInfo(self):
 
-        apiKey = "29147c50e7a8dd3d4f455cbc184ef503"
+        apiKey = "YOUR_API_KEY"
         city = self.input_field.text()
         url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={apiKey}"
         response = requests.get(url)
